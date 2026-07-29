@@ -1,9 +1,9 @@
 import { eq, or } from "drizzle-orm";
-import { env } from "./env.js";
-import { db } from "./db/client.js";
-import { movies, scores, scrapeQueue } from "./db/schema.js";
-import { apiGet, closeApiClient, SessionExpiredError } from "./lib/apiClient.js";
-import { filmPreviewSchema, filmVoteSchema } from "./lib/filmwebSchemas.js";
+import { env } from "../env.js";
+import { db } from "../db/client.js";
+import { movies, scores, scrapeQueue } from "../db/schema.js";
+import { apiGet, closeApiClient, SessionExpiredError } from "../lib/apiClient.js";
+import { filmPreviewSchema, filmVoteSchema } from "../lib/filmwebSchemas.js";
 
 const MAX_ATTEMPTS = 3;
 

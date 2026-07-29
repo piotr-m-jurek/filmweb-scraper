@@ -1,8 +1,8 @@
-import { env } from "./env.js";
-import { db } from "./db/client.js";
-import { scrapeQueue } from "./db/schema.js";
-import { apiGet, closeApiClient } from "./lib/apiClient.js";
-import { votesPageSchema } from "./lib/filmwebSchemas.js";
+import { env } from "../env.js";
+import { db } from "../db/client.js";
+import { scrapeQueue } from "../db/schema.js";
+import { apiGet, closeApiClient } from "../lib/apiClient.js";
+import { votesPageSchema } from "../lib/filmwebSchemas.js";
 
 const PAGE_SIZE = 48;
 
